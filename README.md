@@ -1,8 +1,7 @@
 # Lomax-delegate-racing-for-survival-analysis-with-competing-risks
 Demo code and data for the corresponding NIPS 2008 paper.
 
-The R code for Lomax delegate racing survival analysis with competing risks has been tested on R version 3.4.3 on Ubuntu 16.04.
-The code has not yet been well commented. We will make it clearer and available to public if the paper is accepted. Follow the steps below for analysis of the synthetic data sets.
+The R code for Lomax delegate racing survival analysis with competing risks has been tested on R version 3.4.3 on Ubuntu 16.04. Follow the steps below for analysis of the synthetic data sets.
 
 1. Download everything into a folder. Open an R console, set the working directory to the download folder by setwd("/path/to/folder")
 
