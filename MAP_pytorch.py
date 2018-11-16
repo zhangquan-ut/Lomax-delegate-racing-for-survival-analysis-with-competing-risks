@@ -120,25 +120,7 @@ for s in range(20000):
         print ("iter[{}], Loss_bet: {:.4f}, Loss_r: {:.4f}".format(s+1, loss_bet.item(), loss_r.item()))
 
 
-#==============================================================================
-# Elog=True # Elog=True use Elog(p_l) over l, which is a lower-bounder of the logE(p_l).
-# for s in range(20000):
-#     ee=torch.distributions.gamma.Gamma(r, 1.)
-#     eta=ee.sample(sample_shape=torch.Size([LL,n]))# dim=LL*n*TT*K
-#     logeta=eta.log() # dim=LL*n*TT*K
-#     Xbet=torch.einsum('ip,pjk->ijk', (X,bet)) # dim=n*TT*K
-#     loglam=(Xbet+logeta) # dim=LL*n*TT*K
-#     loglam_yi=(loglam*mult).sum(2)# dim=LL*n*K
-#     loglam_yi[:,Is==0,:]=0.
-#     common=s_t*(loglam.exp().sum(-1).sum(-1))
-#     loss=-log_sum_exp(loglam_yi, dim=2).mean()+common.mean() #+ 0.5*(e0+1.)*torch.log(1.+bet.pow(2)/e0).sum()
-#     optimizer.zero_grad()
-#     loss.backward()
-#     optimizer.step()
-#     if (s+1) % 100 == 0:
-#         print ("iter[{}], Loss: {:.4f}".format(s+1, loss.item()))
-#==============================================================================
-
+        
 # calculate CIF and Brier score (BS)
 nt=Xt.shape[0]
 ee=torch.distributions.gamma.Gamma(r, 1.)
