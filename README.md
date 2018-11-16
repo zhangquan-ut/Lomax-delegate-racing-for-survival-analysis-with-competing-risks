@@ -1,7 +1,7 @@
 # Lomax-delegate-racing-for-survival-analysis-with-competing-risks
 Demo code and data for the corresponding NIPS 2018 paper.
 
-The MAP estimation by pytorch is provided. See MAP_pytorch.py for detail.
+The MAP estimations by pytorch for the synthetic datasets are provided. See MAP_pytorch.py for detail.
 
 The R code of Gibbs sampler for Lomax delegate racing survival analysis with competing risks has been tested on R version 3.4.3 on Ubuntu 16.04. Follow the steps below for analysis of the synthetic data sets.
 
